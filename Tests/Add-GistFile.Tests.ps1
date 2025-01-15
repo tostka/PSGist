@@ -3,7 +3,7 @@ Describe "Add-GistFile" {
         $results = Invoke-ScriptAnalyzer -Path .\PSGist\Public\Add-GistFile.ps1
 
         It "Invoke-ScriptAnalyzer results of Add-GistFile count should be 0." {
-            $results.Count | Should Be 0
+            $results.Count | Should -Be 0
         }
     }
 }

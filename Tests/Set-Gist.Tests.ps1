@@ -3,7 +3,7 @@ Describe "Set-Gist" {
         $results = Invoke-ScriptAnalyzer -Path .\PSGist\Public\Set-Gist.ps1
 
         It "Invoke-ScriptAnalyzer results of Set-Gist count should be 0." {
-            $results.Count | Should Be 0
+            $results.Count | Should -Be 0
         }
     }
 }

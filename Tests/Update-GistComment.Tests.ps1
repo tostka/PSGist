@@ -3,7 +3,7 @@ Describe "Update-GistComment" {
         $results = Invoke-ScriptAnalyzer -Path .\PSGist\Public\Update-GistComment.ps1
 
         It "Invoke-ScriptAnalyzer results of Update-GistComment count should be 0." {
-            $results.Count | Should Be 0
+            $results.Count | Should -Be 0
         }
     }
 }

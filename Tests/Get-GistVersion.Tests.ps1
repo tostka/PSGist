@@ -3,7 +3,7 @@ Describe "Get-GistVersion" {
         $results = Invoke-ScriptAnalyzer -Path .\PSGist\Public\Get-GistVersion.ps1
 
         It "Invoke-ScriptAnalyzer results of Get-GistVersion count should be 0." {
-            $results.Count | Should Be 0
+            $results.Count | Should -Be 0
         }
     }
 }

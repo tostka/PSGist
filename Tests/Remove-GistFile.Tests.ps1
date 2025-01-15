@@ -3,7 +3,7 @@ Describe "Remove-GistFile" {
         $results = Invoke-ScriptAnalyzer -Path .\PSGist\Public\Remove-GistFile.ps1
 
         It "Invoke-ScriptAnalyzer results of Remove-GistFile count should be 0." {
-            $results.Count | Should Be 0
+            $results.Count | Should -Be 0
         }
     }
 }

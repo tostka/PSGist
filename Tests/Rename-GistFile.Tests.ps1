@@ -3,7 +3,7 @@ Describe "Rename-GistFile" {
         $results = Invoke-ScriptAnalyzer -Path .\PSGist\Public\Rename-GistFile.ps1
 
         It "Invoke-ScriptAnalyzer results of Rename-GistFile count should be 0." {
-            $results.Count | Should Be 0
+            $results.Count | Should -Be 0
         }
     }
 }

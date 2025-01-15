@@ -3,7 +3,7 @@ Describe "Get-GistFork" {
         $results = Invoke-ScriptAnalyzer -Path .\PSGist\Public\Get-GistFork.ps1
 
         It "Invoke-ScriptAnalyzer results of Get-GistFork count should be 0." {
-            $results.Count | Should Be 0
+            $results.Count | Should -Be 0
         }
     }
 }
